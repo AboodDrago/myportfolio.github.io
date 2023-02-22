@@ -168,6 +168,49 @@ body {
     border-radius: 50px 50px 5px 5px;
 }
 
+input[type=checkbox] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    ul {
+        list-style-type: none;
+    }
+
+    ul li {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        /* background-color: #1f242d; */
+        right: 0;
+        left: 0;
+        text-align: right;
+        padding: 16px 50px;
+    }
+
+    input[type=checkbox]:checked ~ .navbar {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
 @keyframes slideRight {
     0% {
         transform: translateX(-100px);
