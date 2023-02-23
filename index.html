@@ -9,46 +9,52 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo">Portfolio.</a>
-        <ul>
-            <input type="checkbox" id="checkbox_toggle" />
-            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-            <nav class="navbar">
-                <li><a href="#" style="--i:1;" class="active">Home</a></li>
-                <li><a href="#" style="--i:2;" >About</a></li>
-                <li><a href="#" style="--i:3;" >Skills</a></li>
-                <li><a href="#" style="--i:4;" >Portfolio</a></li>
-                <li><a href="#" style="--i:5;" >Contact</a></li>
-            </nav>
-        </ul>
-    </header>
+    <div class="page-container">
+        <div class="content-wrap">
+            <header class="header">
+                <a href="#" class="logo">Portfolio.</a>
+                <ul>
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                    <nav class="navbar">
+                        <li><a href="#" style="--i:1;" class="active">Home</a></li>
+                        <li><a href="#" style="--i:2;" >About</a></li>
+                        <li><a href="#" style="--i:3;" >Skills</a></li>
+                        <li><a href="#" style="--i:4;" >Portfolio</a></li>
+                        <li><a href="#" style="--i:5;" >Contact</a></li>
+                    </nav>
+                </ul>
+            </header>
+            <section class="home">
+                <div class="home-content">
+                    <h3>Hello, It's Me</h3>
+                    <h1>Abood Drago</h1>
+                    <h3>And I'm a <span class="multiple-text"></span></h3>
+                    <p>I am a Medical Student that likes to code as well.</p>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com" style="--i:7" target="_blank"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com" style="--i:8" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://www.youtube.com" style="--i:9" target="_blank"><i class='bx bxl-youtube'></i></a>
+                        <a href="https://www.twitter.com" style="--i:10" target="_blank"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                    <a href="#" class="btn">Download CV</a>
+                </div>
 
-    <section class="home">
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Abood Drago</h1>
-            <h3>And I'm a <span class="multiple-text"></span></h3>
-            <p>I am a Medical Student that likes to code as well.</p>
-            <div class="social-media">
-                <a href="https://www.facebook.com" style="--i:7" target="_blank"><i class='bx bxl-facebook'></i></a>
-                <a href="https://www.instagram.com" style="--i:8" target="_blank"><i class='bx bxl-instagram'></i></a>
-                <a href="https://www.youtube.com" style="--i:9" target="_blank"><i class='bx bxl-youtube'></i></a>
-                <a href="https://www.twitter.com" style="--i:10" target="_blank"><i class='bx bxl-twitter'></i></a>
-            </div>
-            <a href="#" class="btn">Download CV</a>
+                <div class="home-img">
+                    <img src="pic.png" alt="">
+                </div>
+            </section>
+
+            <br>
+            <div class="hide"></div>
         </div>
 
-        <div class="home-img">
-            <img src="pic.png" alt="">
-        </div>
-    </section>
+        <footer class="footerbar">
+            <h3>@AboodDrago</h3>
+        </footer>
 
-    <footer class="footerbar">
-        <h3>@AboodDrago</h3>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="style.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="style.js"></script>
+    </div>
 </body>
 </html>
