@@ -6,3 +6,14 @@ var typed = new Typed(".multiple-text", {
     backDelay: 1000,
     loop: true,
 })
+
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+    document.getElementById("loadingspinner").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+}

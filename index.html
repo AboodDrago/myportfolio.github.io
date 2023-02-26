@@ -7,9 +7,19 @@
     <title>Portfolio | Abood's Website</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
-<body>
-    <div class="page-container">
+<body onload="myFunction()">
+
+    <div id="loadingspinner">
+        <div id="square1"></div>
+        <div id="square2"></div>
+        <div id="square3"></div>
+        <div id="square4"></div>
+        <div id="square5"></div>
+    </div>
+
+    <div class="page-container" id="myDiv" style="display: none;">
         <div class="content-wrap">
             <header class="header">
                 <a href="#" class="logo">Portfolio.</a>
