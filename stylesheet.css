@@ -19,6 +19,8 @@ body {
     background: #1f242d;
     color: #fff;
     font-family: monospace;
+    display: grid;
+    grid-template-rows: 1fr auto;
 }
 
 .header {
@@ -172,11 +174,8 @@ body {
 }
 
 .footerbar {
-    position: fixed;
     text-align: center;
     padding: 12px 28px;
-    left: 0;
-    bottom: 0;
     height: 2.5rem;
     width: 100%;
     color: #ffffffc4;
