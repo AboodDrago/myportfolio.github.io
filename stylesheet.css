@@ -80,9 +80,195 @@ body {
     padding: 70px 10% 0;
 }
 
-.home-content {
+.home-content, .about-content {
     max-width: 600px;
 }
+
+/* About Page */
+
+.about {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 10% 0;
+}
+
+.about-content {
+  margin-top: 20px;
+}
+
+.border {
+  width: 450px;
+  height: 130px;
+  /* border: 1px solid black; */
+  border-radius: 25px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.island {
+  width: 50%;
+  height: 30px;
+  background: black;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.island:hover {
+  width: 99%;
+  height: 130px;
+  border-radius: 25px;
+  align-items: flex-start;
+  padding: 15px 10px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-auto-flow: row;
+  gap: 10px;
+  /* animation: fadein 0.5s; */
+}
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.info h2 {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: white;
+}
+
+.info h3 {
+  font-size: 0.6rem;
+  font-weight: normal;
+  color: white;
+}
+
+.info > .text {
+  display: none;
+  user-select: none;
+}
+
+.island:hover .info > .text {
+  display: block;
+    animation: fadein 1s;
+}
+
+.album-cover {
+  overflow: hidden;
+  width: 22px;
+  height: 22px;
+  border-radius: 11px;
+}
+
+.island:hover .album-cover {
+  width: 40px;
+  height: 40px;
+  animation: all 0.3s ease;
+}
+
+.album-cover > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.player {
+  display: none;
+}
+
+.island:hover .player {
+  grid-column: 1 / -1;
+  font-size: 0.6rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+        animation: fadein 1s;
+}
+
+.progress {
+  width: 100%;
+  height: 4px;
+  background-color: grey;
+  border-radius: 100px;
+  margin-top: 2px;
+}
+
+.progress-bar {
+  width: 50%;
+  height: 100%;
+  background-color: #50C878;
+  border-radius: 100px;
+}
+
+.bar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  width: 20px;
+  height: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1px;
+}
+
+.loader > .bar {
+  background: #50C878;
+  height: 2px;
+  width: 2px;
+  animation: sound 0ms -800ms linear infinite alternate;
+}
+
+@keyframes sound {
+  0% {
+    height: 2px;
+    opacity: .35;
+  }
+  100% {
+    height: 100%;
+    opacity: .35;
+  }
+  
+}
+
+.bar:nth-child(1) { animation-duration: 474ms; }
+.bar:nth-child(2) { animation-duration: 433ms; }
+.bar:nth-child(3) { animation-duration: 407ms; }
+.bar:nth-child(4) { animation-duration: 458ms; }
+.bar:nth-child(5) { animation-duration: 400ms; }
+.bar:nth-child(6) { animation-duration: 427ms; }
+.bar:nth-child(7) { animation-duration: 441ms; }
+.bar:nth-child(8) { animation-duration: 419ms; }
+.bar:nth-child(9) { animation-duration: 487ms; }
+.bar:nth-child(10) { animation-duration: 442ms; }
 
 .home-content h3 {
     font-size: 32px;
@@ -118,7 +304,7 @@ body {
     animation-delay: 1s;
 }
 
-.home .home-content .home-img{
+.home .home-content .home-img {
     flex-grow: 1;
 }
 
@@ -176,7 +362,7 @@ body {
 .footerbar {
     text-align: center;
     padding: 12px 28px;
-    height: 2.5rem;
+    height: 3.5rem;
     width: 100%;
     color: #ffffffc4;
     background-color: rgba(0, 255, 106, 0.044);
@@ -449,20 +635,24 @@ ul li {
   }
 
 @media screen and (max-width: 768px) {
+    .about {
+      justify-content: center;
+    }
+
     img {
         width: 250px;
     }
 
-    .home {
+    .home, .about {
         display: flex;
         flex-direction: column;
     }
     
-    .home-img {
+    .home-img, .spotify {
         order: 1;
     }
 
-    .home-content {
+    .home-content, .about-content {
         order: 2;
     }
 
