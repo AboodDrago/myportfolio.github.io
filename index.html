@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
-<body onload="myFunction()">
-    <canvas id="starfield" width="1578" height="1402"></canvas>
-    
+<body onload="myFunction()" id="body">
+    <div id="stars1"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+
     <div id="loadingspinner">
         <div id="square1"></div>
         <div id="square2"></div>
@@ -23,12 +25,12 @@
     <div class="page-container" id="myDiv" style="display: none;">
         <div class="content-wrap">
             <header class="header">
-                <a href="#" class="logo">Portfolio.</a>
+                <a href="#home" class="logo">Portfolio.</a>
                 <ul>
                     <input type="checkbox" id="checkbox_toggle" />
                     <label for="checkbox_toggle" class="hamburger">&#9776;</label>
                     <nav class="navbar">
-                        <li><a href="#" style="--i:1;" class="active">Home</a></li>
+                        <li><a href="#home" style="--i:1;" class="active">Home</a></li>
                         <li><a href="#about" style="--i:2;" >About</a></li>
                         <li><a href="#" style="--i:3;" >Skills</a></li>
                         <li><a href="#" style="--i:4;" >Portfolio</a></li>
@@ -36,7 +38,7 @@
                     </nav>
                 </ul>
             </header>
-            <section class="home">
+            <section class="home" id="home">
                 <div class="home-content">
                     <h3>Hello, It's Me</h3>
                     <h1>Abood Drago</h1>
@@ -61,15 +63,24 @@
             <section class="about" id="about">
                 <div class="about-content">
                     <h2>Hello everyone, I am Abdulla Yasser</h2>
-                    <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio 
-                        recusandae laborum minima ipsum a nemo perferendis perspiciatis reiciendis minus est?</h2>
-                </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio 
+                        recusandae laborum minima ipsum a nemo perferendis perspiciatis reiciendis minus est?</p>
+                    <h2>Hello everyone, I am Abdulla Yasser</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio 
+                        recusandae laborum minima ipsum a nemo perferendis perspiciatis reiciendis minus est?</p>
+                    <h2>Hello everyone, I am Abdulla Yasser</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio 
+                        recusandae laborum minima ipsum a nemo perferendis perspiciatis reiciendis minus est?</p>
+                    <h2>Hello everyone, I am Abdulla Yasser</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio 
+                        recusandae laborum minima ipsum a nemo perferendis perspiciatis reiciendis minus est?</p>
+                    </div>
             </section>
         </div>
 
         <footer class="footerbar">
             <h3>Powered by AboodDrago</h3>
-            <p>© 2023 Portfolio.io</p>
+            <p>2023 © Portfolio.io</p>
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
