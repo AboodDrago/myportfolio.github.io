@@ -12,9 +12,11 @@ var myVar;
 function myFunction() {
     myVar = setTimeout(showPage, 3000);
     document.getElementById("body").style.overflowY = "hidden";
+    document.getElementById("footerid").style.display = "none";
 }
 
-function showPage() {    
+function showPage() {
+    document.getElementById("footerid").style.display = "block";
     document.getElementById("body").style.overflowY = "Scroll";
     document.getElementById("loadingspinner").style.display = "none";
     document.getElementById("myDiv").style.display = "block";
