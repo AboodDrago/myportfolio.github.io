@@ -179,7 +179,7 @@ body {
 }
 
 .about-content h2 {
-  font-size: 33px;
+  font-size: 45px;
   font-weight: 700;
   margin: -3px 0;
   opacity: 0;
@@ -187,9 +187,13 @@ body {
   animation-delay: 1.5s;
 }
 
+.about-content h2 span {
+  color: #50C878;
+}
+
 .about-content p {
-  text-align: justify;
-  font-size: 18px;
+  text-align: left;
+  font-size: 19px;
   opacity: 0;
   animation: slideLeft 1s ease forwards;
   animation-delay: 1.5s;
@@ -263,6 +267,7 @@ body {
   background-color: rgba(0, 255, 106, 0.044);
   border-radius: 50px 50px 5px 5px;
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(21px);
 }
 
 input[type=checkbox] {
@@ -639,6 +644,11 @@ to {
   .hamburger {
       display: block;
       cursor: pointer;
+  }
+
+  .footerbar {
+    -webkit-backdrop-filter: blur(21px);
+    backdrop-filter: blur(21px);
   }
 }
 
